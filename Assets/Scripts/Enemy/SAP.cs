@@ -54,7 +54,7 @@ public class SAP : MonoBehaviour {
         {
             if (isSliding)
             {
-                gameObject.tag = "SlidingAttack";
+             //   gameObject.tag = "SlidingAttack";
                 anim.SetBool("IsSliding", true);
                 if (Mathf.Abs(rb2d.transform.position.x - player.transform.position.x) > 1)
                 {

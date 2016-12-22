@@ -3,6 +3,7 @@ using System.Collections;
 
 public class HealthBarScript : MonoBehaviour {
     public HealthBarTriggerScript parentScript;
+    public DMG_Detector detector;
     public float healthPercentage = 100;
     public float scale_x;
     public float scale_y;
@@ -43,7 +44,9 @@ public class HealthBarScript : MonoBehaviour {
             if (scale_x < 0)
                 scale_x = 0;
             overlapPreventer = false;
+            parentScript.gotDamaged = false;
+            detector.gotDmged = false;
         }
         this.transform.localScale = new Vector3(scale_x, scale_y, scale_z);
-	}
+    }
 }
