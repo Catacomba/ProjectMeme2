@@ -11,7 +11,18 @@ public class PlayerMovement : MonoBehaviour {
 	public float radius;
 	public LayerMask groundMask;
 
-	bool isGrounded;
+    //Sound
+    public AudioClip clipAttack;
+    public AudioClip clipUpvote;
+    public AudioClip clipJump;
+    public AudioClip clipUlti;
+    public AudioClip clipGetHit;
+    public AudioClip clipPickHP;
+    public AudioClip clipPickMP;
+    private AudioSource src;
+    //end Sound
+
+    bool isGrounded;
 
 	Rigidbody2D rb2d;
 	Animator anim;
@@ -19,8 +30,14 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
-		rb2d = GetComponent<Rigidbody2D> ();
-	}
+		rb2d = GetComponent<Rigidbody2D> ();      
+    }
+
+    void Awake()
+    {
+        src = GetComponent<AudioSource>(); //Dobimo AudioSource component
+    }
+
 	void Update(){
 
 	}
@@ -37,17 +54,19 @@ public class PlayerMovement : MonoBehaviour {
 		anim.SetBool("InAir", !isGrounded);
 
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded){
-			rb2d.AddForce (new Vector2 (0, jumpHeigth)); //skok igralca
+            src.PlayOneShot(clipJump, 0.5f);
+            rb2d.AddForce (new Vector2 (0, jumpHeigth)); //skok igralca
 		}
 
 		//ATTACK ANIMATION
-		if (Input.GetKeyDown (KeyCode.E)) {
+		if (Input.GetKeyDown (KeyCode.E)) {   
+            src.PlayOneShot(clipAttack, 0.3f);
 			anim.SetTrigger ("Attack");
-
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			anim.SetTrigger ("Like");
+            src.PlayOneShot(clipUpvote, 0.5f);
+            anim.SetTrigger ("Like");
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
@@ -58,8 +77,9 @@ public class PlayerMovement : MonoBehaviour {
 			anim.SetTrigger ("RainbowSwipe");
 		}
 
-		if (Input.GetKeyDown (KeyCode.Alpha4)) {
-			anim.SetTrigger ("Ulti");
+		if (Input.GetKeyDown (KeyCode.Alpha4)) {         
+            src.PlayOneShot(clipUlti, 0.5f);
+            anim.SetTrigger ("Ulti");
 		}
 
 
