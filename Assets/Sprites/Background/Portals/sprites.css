@@ -1,0 +1,22 @@
+.Portal-Level 1, .Portal-Level 2, .Portal-Level 3{
+	background: url(sprites.png) no-repeat;
+}
+
+.Portal-Level 1{
+	background-position: 0 0;
+	width: 85px;
+	height: 90px;
+}
+
+.Portal-Level 2{
+	background-position: -88px 0;
+	width: 83px;
+	height: 90px;
+}
+
+.Portal-Level 3{
+	background-position: -173px 0;
+	width: 90px;
+	height: 90px;
+}
+

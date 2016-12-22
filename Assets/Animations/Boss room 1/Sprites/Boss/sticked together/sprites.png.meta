@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: c9376a41715079248bfa28b707d7cba1
+timeCreated: 1480591663
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: left_fist
+    21300002: right_fist
+    21300004: arm_left_lower
+    21300006: arm_left_upper
+    21300008: arm_right_lower
+    21300010: arm_right_upper
+    21300012: left_foot
+    21300014: right_foot
+    21300016: sprites_8
+    21300018: sprites_9
+    21300020: leg_left_upper
+    21300022: leg_right_upper
+    21300024: leg_left_lower
+    21300026: leg_right_lower
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: left_fist
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 706
+        width: 90
+        height: 95
+      alignment: 9
+      pivot: {x: 0.34941253, y: 0.47146767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_fist
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 708
+        width: 84
+        height: 89
+      alignment: 9
+      pivot: {x: 0.7258813, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arm_left_lower
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 561
+        width: 88
+        height: 224
+      alignment: 9
+      pivot: {x: 0.58687073, y: 0.80452454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arm_left_upper
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 539
+        width: 100
+        height: 258
+      alignment: 9
+      pivot: {x: 0.4647171, y: 0.9034277}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arm_right_lower
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 555
+        width: 82
+        height: 222
+      alignment: 9
+      pivot: {x: 0.6147409, y: 0.8125657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: arm_right_upper
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 549
+        width: 100
+        height: 236
+      alignment: 9
+      pivot: {x: 0.6058484, y: 0.9260851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: left_foot
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 579
+        width: 92
+        height: 97
+      alignment: 9
+      pivot: {x: 0.7907492, y: 0.85849094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: right_foot
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 582
+        width: 95
+        height: 93
+      alignment: 9
+      pivot: {x: 0.26066765, y: 0.83076656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 572
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sprites_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 180
+        width: 287
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leg_left_upper
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 346
+        width: 137
+        height: 162
+      alignment: 9
+      pivot: {x: 0.6276495, y: 0.898948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leg_right_upper
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 335
+        width: 138
+        height: 170
+      alignment: 9
+      pivot: {x: 0.24655063, y: 0.92042774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leg_left_lower
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 224
+        width: 93
+        height: 100
+      alignment: 9
+      pivot: {x: 0.46729696, y: 0.8193463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leg_right_lower
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 214
+        width: 87
+        height: 105
+      alignment: 9
+      pivot: {x: 0.47652814, y: 0.86951524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

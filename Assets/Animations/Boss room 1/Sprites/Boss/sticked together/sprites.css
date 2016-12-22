@@ -1,0 +1,82 @@
+.arm_left_fist, .arm_right_fist, .arm_left_lower, .arm_left_upper, .arm_right_lower, .arm_right_upper, .boss_upperbody, .leg_left_foot, .leg_left_lower, .leg_left_upper, .leg_right_foot, .leg_right_lower, .leg_right_upper{
+	background: url(sprites.png) no-repeat;
+}
+
+.arm_left_fist{
+	background-position: 0 0;
+	width: 94px;
+	height: 106px;
+}
+
+.arm_right_fist{
+	background-position: -104px 0;
+	width: 96px;
+	height: 104px;
+}
+
+.arm_left_lower{
+	background-position: -212px 0;
+	width: 103px;
+	height: 271px;
+}
+
+.arm_left_upper{
+	background-position: -304px 0;
+	width: 129px;
+	height: 271px;
+}
+
+.arm_right_lower{
+	background-position: -422px 0;
+	width: 97px;
+	height: 271px;
+}
+
+.arm_right_upper{
+	background-position: -517px 0;
+	width: 123px;
+	height: 271px;
+}
+
+.boss_upperbody{
+	background-position: 0 -249px ;
+	width: 295px;
+	height: 385px;
+}
+
+.leg_left_foot{
+	background-position: 0 -130px ;
+	width: 98px;
+	height: 101px;
+}
+
+.leg_left_lower{
+	background-position: -326px -482px ;
+	width: 93px;
+	height: 101px;
+}
+
+.leg_left_upper{
+	background-position: -320px -296px ;
+	width: 138px;
+	height: 167px;
+}
+
+.leg_right_foot{
+	background-position: -110px -124px ;
+	width: 107px;
+	height: 108px;
+}
+
+.leg_right_lower{
+	background-position: -494px -488px ;
+	width: 87px;
+	height: 106px;
+}
+
+.leg_right_upper{
+	background-position: -474px -300px ;
+	width: 141px;
+	height: 172px;
+}
+
