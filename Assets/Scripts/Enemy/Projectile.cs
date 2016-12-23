@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour {
 	void Update () {
         rb2d.AddForce(travel * speed);
         if (Mathf.Abs(Vector2.Distance(player.transform.position, transform.position))>destroyDistance)
-        {
+        {   
             Destroy(this.gameObject);
         }
 	}
