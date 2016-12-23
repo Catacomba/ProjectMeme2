@@ -1,10 +1,18 @@
 fileFormatVersion: 2
 guid: 368cbcbeca7f5da46972f75c92e9ba82
-timeCreated: 1478444050
+timeCreated: 1482425695
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - groundPoint: {instanceID: 0}
+  - clipAttack: {fileID: 8300000, guid: 9e761bd9396ec494fb514bbe1ea31162, type: 3}
+  - clipUpvote: {fileID: 8300000, guid: a84399e8ba83e6a428d8a96d0145f2ed, type: 3}
+  - clipJump: {fileID: 8300000, guid: eb992dd53c0012643bbbb0241ef8fc0d, type: 3}
+  - clipUlti: {fileID: 8300000, guid: 3d5ea9751fed8af44b572901a73a96f4, type: 3}
+  - clipGetHit: {instanceID: 0}
+  - clipPickHP: {instanceID: 0}
+  - clipPickMP: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

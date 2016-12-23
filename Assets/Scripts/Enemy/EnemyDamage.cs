@@ -27,7 +27,7 @@ public class EnemyDamage : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        Debug.Log("Triggered");
+      //  Debug.Log("Triggered");
         // If the entering collider is the player...
         if (other.gameObject == player)
         {
@@ -39,7 +39,7 @@ public class EnemyDamage : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other)
     {
 
-        Debug.Log("Triggered");
+       // Debug.Log("Triggered");
         // If the entering collider is the player...
         if (other.gameObject == player)
         {

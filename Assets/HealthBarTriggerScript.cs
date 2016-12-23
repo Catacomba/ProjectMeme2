@@ -3,6 +3,7 @@ using System.Collections;
 
 public class HealthBarTriggerScript : MonoBehaviour {
     public HealthBarScript hpScript;
+    public DMG_Detector detector;
     public float dmgTaken = 0;
     public bool gotDamaged = false;
     public float hp = 2000;
@@ -33,7 +34,9 @@ public class HealthBarTriggerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         hp = hpScript.hp;
+        dmgTaken = (float)detector.Entry_Dmg;
+        gotDamaged = detector.gotDmged;
         if(!stopMakingRutines)
             StartCoroutine(delayDroper());
-	}
+    }
 }
