@@ -10,6 +10,7 @@ public class PortalRotate : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player") {
+            Debug.Log("LOwdam sceno");
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
     }

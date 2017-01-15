@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class HealthBarTriggerScript : MonoBehaviour {
     public HealthBarScript hpScript;
@@ -12,6 +13,7 @@ public class HealthBarTriggerScript : MonoBehaviour {
     public bool dropDelay=false;
     public int delayer = 0;
     public bool stopMakingRutines=false;
+    public string sceneName;
     // Use this for initialization
     void Start () {
         hp_3secBack = hp;
@@ -34,6 +36,10 @@ public class HealthBarTriggerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         hp = hpScript.hp;
+        if (hp <= 0)
+        {
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        }
         dmgTaken = (float)detector.Entry_Dmg;
         gotDamaged = detector.gotDmged;
         if(!stopMakingRutines)
