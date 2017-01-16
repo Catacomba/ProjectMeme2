@@ -17,7 +17,7 @@ public class ConfessionBearScript : MonoBehaviour {
     private float timeLeft;
 
     private GameObject player;
-    private Canvas canvas;
+    //private Canvas canvas;
 
 
 
@@ -35,14 +35,14 @@ public class ConfessionBearScript : MonoBehaviour {
             Debug.Log("Time left: " + timeLeft );
             if (timeLeft <= 0.0 && (attackRange > Vector2.Distance(player.transform.position, transform.position)))
             {
-                Debug.Log("Vorks?");
+               
                 isAttacking = true;
                 timeLeft = attackPrepTimer;
             }
         }
         else {
             //izpis napisa
-            canvas.enabled = true;
+            //canvas.enabled = true;
             if (timeLeft < 1.0) {
                 GetComponent<SpriteRenderer>().sprite = attack;
             }
@@ -60,7 +60,7 @@ public class ConfessionBearScript : MonoBehaviour {
     }
 
     void firePotato() {
-        Vector2 potatoPoz = new Vector2(transform.position.x + (float)0.4, transform.position.y + (float)0.3);
+        Vector2 potatoPoz = new Vector2(transform.position.x - (float)0.4, transform.position.y + (float)0.3);
 
         Instantiate(potato, potatoPoz, transform.rotation);
     }

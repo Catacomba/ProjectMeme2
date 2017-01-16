@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class HealthBarTriggerScript : MonoBehaviour {
     public HealthBarScript hpScript;
     public DMG_Detector detector;
+    public GameObject selectedObject;
     public float dmgTaken = 0;
     public bool gotDamaged = false;
     public float hp = 2000;
@@ -38,7 +39,13 @@ public class HealthBarTriggerScript : MonoBehaviour {
         hp = hpScript.hp;
         if (hp <= 0)
         {
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            if (sceneName != "")
+            {
+                SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            }
+            else {
+                Destroy(selectedObject.gameObject);
+            }
         }
         dmgTaken = (float)detector.Entry_Dmg;
         gotDamaged = detector.gotDmged;

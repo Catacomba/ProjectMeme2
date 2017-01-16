@@ -86,9 +86,10 @@ public class Player_Health : MonoBehaviour
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         // Turn off any remaining shooting effects.
         //  playerShooting.DisableEffects();
+        Debug.Log("you died");
 
         // Tell the animator that the player is dead.
-        anim.SetTrigger("Die");
+        //anim.SetTrigger("Die");
 
         // Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
         //playerAudio.clip = deathClip;
