@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class Player_Health : MonoBehaviour
 {
     public int startingHealth = 100;                            // The amount of health the player starts the game with.
@@ -11,7 +11,7 @@ public class Player_Health : MonoBehaviour
     //public AudioClip deathClip;                                 // The audio clip to play when the player dies.
     public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);     // The colour the damageImage is set to, to flash.
-
+    public string sceneName;
 
     Animator anim;                                              // Reference to the Animator component.
     //AudioSource playerAudio;                                    // Reference to the AudioSource component.
@@ -83,9 +83,9 @@ public class Player_Health : MonoBehaviour
     {
         // Set the death flag so this function won't be called again.
         isDead = true;
-
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         // Turn off any remaining shooting effects.
-      //  playerShooting.DisableEffects();
+        //  playerShooting.DisableEffects();
 
         // Tell the animator that the player is dead.
         anim.SetTrigger("Die");

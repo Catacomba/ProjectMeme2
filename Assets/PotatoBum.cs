@@ -40,7 +40,7 @@ public class PotatoBum : MonoBehaviour {
             eksplozija = true;
             rb2d.AddForce(travel);
         }
-        Debug.Log(lastAnimation);
+        //Debug.Log(lastAnimation);
         if (eksplozija) {
             if (lastAnimation < 0.0) {
                 Destroy(this.gameObject);

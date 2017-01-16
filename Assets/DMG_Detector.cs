@@ -13,6 +13,7 @@ public class DMG_Detector : MonoBehaviour {
     void Update () {
         if (gotDmged)
         {
+            Debug.Log("PREJEL DMG");
             hpScript.dmgTaken = (float)Entry_Dmg;
             hpScript.gotDamaged = gotDmged;
         }
