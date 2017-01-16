@@ -26,7 +26,7 @@ public class AMS : MonoBehaviour {
 		{
             move = new Vector2(0, 0);
             rb2d.velocity = move;
-            gameObject.tag = "EnemyAttack";
+            //gameObject.tag = "EnemyAttack";
             anim.SetTrigger("Attack");
 
         }

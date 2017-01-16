@@ -7,7 +7,7 @@ public class DamageTheBastard : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Tigger: "+other.tag);
-        if (this.tag == "Orozje" /*&& other.tag == "Enemy"*/)
+        if (this.tag == "Orozje" && other.tag == "Enemy")
         {
             Debug.Log("Triggered... attack");
             other.GetComponent<DMG_Detector>().Entry_Dmg = damage;
